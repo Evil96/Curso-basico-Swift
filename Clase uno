@@ -1,0 +1,58 @@
+//
+// Creado por Edgar Vilchis
+// Fecha: 6 de Enero, 2020
+//
+// Ejercicios resueltos sobre la primer clase del curso para repaso
+// Incluye pequeñas explicaciones sobre como funciona cada parte
+//
+// Última modificación: 6 de Enero, 2020
+
+//Operadores con constantes
+
+let numero = 50
+let otroNumero = 125
+let numeroFloat: Float = 249.34
+let numeroDouble: Double = 345.88
+
+//Recordar la diferencia entre float y double: el tipo de uso de espacio en memoria
+
+//Existen:
+//Suma, resta, multiplicacion, division y %
+
+numero + otroNumero //No combinar floats y doubles con int
+
+numeroFloat + numeroFloat //Suma de floats
+numeroDouble + numeroDouble //Suma de doubles
+
+otroNumero % numero
+//El % devuelve el residuo de dividir un numero entre otro, como en otros lenguajes de programación
+
+//Interpolación de cadenas (String  Interpolation) para agregar valores a un string
+//Además, recordar el salto de linea \n
+
+let miCadena = "Hola, Mundo! Tengo \(otroNumero) operaciones que hacer y \(numero) \n ejercicios de serie. Ayudaré también a un amigo con sus ejercicios y me pagará \(numeroFloat) \n pesos por la asesoría de media hora, además \(numeroDouble) por la gasolina de mi auto por \n vivir del otro lado de la ciudad."
+
+
+//Con la función print podemos ver de manera más clara los saltos de linea realizados.
+print(miCadena)
+
+//A continuacion la estructura basica de un condicional
+//Se pone la forma más básica para que, si se desea, modificarlo y jugar con ella
+
+//Uso de un condicional:
+
+if numero > 20{
+    print("Mi numero es mayor que veinte")
+} else{
+    print("Mi numero es muy pequeño!")
+}
+
+
+//Uso de una funcion:
+
+func haciendoNumeros(num: Int, cad: String) -> String{
+    
+    return "Okay, ahora sé que necesito \(num) pesos para irme de viaje \n Además, mi mamá me dijo que \(cad)"
+}
+
+print(haciendoNumeros(num: 2000, cad: "me ponga un sueter"))
